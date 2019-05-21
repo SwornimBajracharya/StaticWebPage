@@ -1,0 +1,282 @@
+/* Created by FcKdBcH on 25th March, 2017 */
+
+body {
+    //background: #EBEBEB;
+background: #FFFFFF;
+    text-align: justify;
+    font-size: 17px;
+}
+
+#main {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+header {
+    width: 100%;
+}
+
+#login {
+    border-radius: 10px;
+    padding: 20px;
+    height: inherit;
+    float: right;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    background-color: #336b87;
+    color: white;
+    box-shadow: 1px 8px 5px lightgray;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+}
+
+#login h1 {
+    margin-top: 0;
+    overflow: hidden;
+}
+
+#login input {
+    border-left: none;
+    border-top: none;
+    padding: 5px;
+}
+
+nav {
+    background-color: #336b87;
+    box-shadow: 1px 8px 5px lightgray;
+    padding-left: 120px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+    border-right: 1px solid white;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+nav a {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: white;
+    background: #01579B;
+}
+
+ul ul li {
+    border-right: none;
+    border-bottom: 1px solid white;
+    float: none;
+}
+
+ul ul li:last-child {
+    border-bottom: none;
+}
+
+ul ul {
+    display: none;
+    position: absolute;
+    background: gray;
+}
+
+ul li:hover ul {
+    display: block;
+
+}
+
+#cover {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+    height: 400px;
+}
+
+#services {
+    border-radius: 10px;
+    padding-left: 0;
+}
+
+#services a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 20px 25px 20px 25px;
+}
+
+#services ul li:first-child a {
+    border-radius: 10px 0 0 10px;
+}
+
+#services ul li:last-child{
+    float: right;
+    border-right: none;
+}
+
+#services ul li {
+    border: none;
+    text-align: center;
+    border-right: 1px solid white;
+}
+
+#services h3 {
+    margin: 20px 25px 20px 25px;
+    color: white;
+}
+
+#services input {
+    float: right;
+    width: 200px;
+    margin: 15px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+}
+
+#contain {
+    width: 70%;
+    float: left;
+}
+
+#contain article img {
+    float: left;
+    width: 150px;
+    overflow: hidden;
+    padding: 2px 8px 8px 8px;
+    height: inherit;
+}
+
+.heading {
+    color: white;
+    background: #336b87;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#contain article {
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+}
+
+article p {
+    background: #C5CAE9;
+    margin: 0;
+    text-align: justify;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 10px;
+    color: #212121;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    margin-top: 15px;
+}
+
+aside ul {
+    list-style: square;
+}
+
+aside h3 {
+    margin: 10px;
+    padding: 0;
+
+}
+
+#articles article {
+    width: 30%;
+    float: left;
+    margin: 10px;
+}
+
+#articles img {
+    margin-bottom: 10px;
+    height: 250px;
+    width: 100%
+}
+
+#articles h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#main strong {
+    font-size: 20px;
+    margin: 5px;
+}
+
+
+#message{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#count{
+    clear: both;
+}
+
+.count_box{
+    float: left;
+    border-radius: 50%;
+    border: medium solid #336b87;
+    margin: 20px 34px 20px 34px;
+    display: inline-block;
+    padding: 20px 12px 3px 12px;
+    text-align: center;
+    width: 10%;
+    font-size: 17px;
+}
+
+.content{
+    margin: 50px;
+    font-size: 20px;
+}
+
+#map1 {
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+}
+
+footer {
+    clear: both;
+    margin: 0;
+    padding: 0;
+
+}
+
+footer small {
+    float: right;
+    padding: 5px;
+}
+
+#top{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+
+</head>
+<body>
+
+<header>
+    <div id="head">
+        <div id="login">
+            <h1>Online services</h1>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button>Submit</button>
+            <br>
+            <sub><a href="#">Forgot Password?</a></sub>
+        </div>
+        <a href="index.html"><img src="img/logoRBC1.png" alt="Logo" id="logo">
+            <!--<h1 id="logoName">oyal Banking Corp</h1>--></a>
+
+    </div>
+</header>
+
+<nav id="menu">
+    <ul>
+        <li><a href="index.html">Home</a>
+
+        </li>
+        <li><a href="about.html">About Us</a>
+            <ul>
+                <li><a href="about.html#bod">Board of Directors</a></li>
+                <li><a href="about.html#staff">Staffs</a></li>
+                <li><a href="visit.html#loc">Branches</a></li>
+            </ul>
+        </li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="#">Join Us</a>
+            <ul>
+                <li><a href="kyc.html">KYC Form</a></li>
+                <li><a href="demat.html">Demat Form</a></li>
+
+            </ul>
+        </li>
+
+        <li><a href="#">Contact US</a>
+            <ul>
+                <li><a href="write.html">Write to Us</a></li>
+                <li><a href="visit.html">Visit Us</a></li>
+            </ul>
+        </li>
+        <li><a href="FAQ.html">FAQs</a></li>
+    </ul>
+</nav>
+<div id="main">
+<h1>Gallery</h1>
+
+
+    <div class="row">
+        <div class="column">
+            <img src="img/img.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="img">
+        </div>
+        <div class="column">
+            <img src="img/img1.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="img">
+        </div>
+        <div class="column">
+            <img src="img/img2.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="img">
+        </div>
+        <div class="column">
+            <img src="img/img3.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="img">
+        </div>
+        <div class="column">
+            <img src="img/img4.png" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="img">
+        </div>
+        <div class="column">
+            <img src="img/img5.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" alt="img">
+        </div>
+        <div class="column">
+            <img src="img/img6.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow" alt="img">
+        </div>
+        <div class="column">
+            <img src="img/img7.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow" alt="img">
+        </div>
+        <div class="column">
+            <img src="img/img8.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow" alt="img">
+        </div>
+
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">Contract Deal Overseas</div>
+                <img src="img/img.jpg" alt="img">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">#1 Bank of the Year</div>
+                <img src="img/img1.jpg" alt="img">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">Ceremony #1</div>
+                <img src="img/img2.jpg" alt="img">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">Cooperation #1</div>
+                <img src="img/img3.jpg" alt="img">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">Celebration #1</div>
+                <img src="img/img4.png" alt="img">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">Office Party #1</div>
+                <img src="img/img5.jpg" alt="img">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">Office Party #2</div>
+                <img src="img/img6.jpg" alt="img">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">Board of Directors</div>
+                <img src="img/img7.jpg" alt="img">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">150 years anniversary</div>
+                <img src="img/img8.jpg" alt="img">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <hr>
+    &copy; Royal International Bank Corp.
+
+
+    <small>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms and Conditions</a>
+        <a href="help.html">Help</a>
+        <a href="sitemap.html">SiteMap</a>
+    </small>
+</footer>
+
+<script>
+    function openModal() {
+        document.getElementById('myModal').style.display = "block";
+    }
+    function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+    }
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+</script>
+</body>
+</html>

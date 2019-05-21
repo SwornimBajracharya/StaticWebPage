@@ -1,0 +1,57 @@
+#city, #form input{
+    border: none;
+    font-size: 16px;
+    height: auto;
+    outline: 0;
+    padding: 15px;
+    width: 90%;
+    background-color: #e8eeef;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    float: right;
+}
+
+#form {
+    margin: 10px auto;
+    padding: 10px 20px 10px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    max-width: 480px;
+}
+
+.err, #derr{
+    color: red;
+    font-size: 14px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+}
+
+#forh{
+    background: #046497;
+    margin: 10px auto;
+    margin-top: 30px;
+    color: white;
+    font-size: 25px;
+    width: 100%;
+    border: 1px solid blue;
+    border-radius: 10px;
+    max-width: 480px;
+}
+
+#forh img{
+    float: left;
+    margin: 10px;
+
+}
+
+#form button{
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    background: #7beb2e;
+}
+
+

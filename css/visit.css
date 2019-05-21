@@ -1,0 +1,26 @@
+table {
+	width: 100%;
+	margin-bottom: 15px;
+	border-radius: 20px;
+}
+
+tbody tr td {
+	border: none;
+	padding: 10px;
+    text-align: center;
+}
+
+tbody tr th {
+    border: none;
+    padding: 10px;
+    text-align: center;
+}
+
+tbody tr td:first-child{
+    border-right: 1px solid black
+}
+
+h2, h3{
+    margin: 0;
+    padding: 0;
+}
